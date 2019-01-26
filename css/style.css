@@ -355,6 +355,8 @@ img.thumbnail {
 .far,
 .fas {
   line-height: inherit;
+  color: #696969;
+  size: 2rem;
 }
 /* ---------------------------------
  *        Fix content elements
