@@ -478,3 +478,13 @@ figure.highlight:hover .copy {
 .gist .file {
   all: initial;
 }
+.post-copyright {
+  margin: 2em 0 0;
+  padding: 0.5em 1em;
+  border-left: 3px solid #8cb3d9;
+  background-color: #f9f9f9;
+  list-style: none;
+}
+.post-copyright li {
+  line-height: 30px;
+}
