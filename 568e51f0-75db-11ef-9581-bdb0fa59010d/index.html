@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>Test-Report for 24-09-22 - みぞれの心の世界</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+    <meta name="description" content="24-09-14 Ferdous Sohel 教授 “深度学习模型结构窥视”讲座笔记教授简介：Ferdous Sohel 现为澳大利亚蒙纳士 monash 大学 IT 教授，曾是西澳大利亚大学的助理教授，主要研究方向在 CV、多感官多模态融合计算、农业电子化 (监控、增产、智能化、环境友好化) ，并少许涉足了 AI 与健康医药领域交叉的研究。教育经历而言，1996/12 - 2002/04 在孟加">
+<meta name="keywords" content="夢 希望 ；絶望 現実">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Test-Report for 24-09-22">
+<meta property="og:url" content="https://blog.mizorekaren.top/568e51f0-75db-11ef-9581-bdb0fa59010d/index.html">
+<meta property="og:site_name" content="みぞれの心の世界">
+<meta property="og:description" content="24-09-14 Ferdous Sohel 教授 “深度学习模型结构窥视”讲座笔记教授简介：Ferdous Sohel 现为澳大利亚蒙纳士 monash 大学 IT 教授，曾是西澳大利亚大学的助理教授，主要研究方向在 CV、多感官多模态融合计算、农业电子化 (监控、增产、智能化、环境友好化) ，并少许涉足了 AI 与健康医药领域交叉的研究。教育经历而言，1996/12 - 2002/04 在孟加">
+<meta property="og:locale" content="ja">
+<meta property="og:image" content="https://blog.mizorekaren.top/568e51f0-75db-11ef-9581-bdb0fa59010d/2024-09-16_18-01-00.png">
+<meta property="og:image" content="https://blog.mizorekaren.top/568e51f0-75db-11ef-9581-bdb0fa59010d/2024-09-16_18-08-13.png">
+<meta property="og:image" content="https://blog.mizorekaren.top/568e51f0-75db-11ef-9581-bdb0fa59010d/2024-09-16_18-21-44.png">
+<meta property="og:image" content="https://blog.mizorekaren.top/568e51f0-75db-11ef-9581-bdb0fa59010d/2024-09-16_18-45-46.png">
+<meta property="og:image" content="https://blog.mizorekaren.top/568e51f0-75db-11ef-9581-bdb0fa59010d/2024-09-17_05-57-37.png">
+<meta property="og:image" content="https://blog.mizorekaren.top/568e51f0-75db-11ef-9581-bdb0fa59010d/2024-09-16_20-02-48.png">
+<meta property="og:image" content="https://blog.mizorekaren.top/568e51f0-75db-11ef-9581-bdb0fa59010d/2024-09-16_20-41-46.png">
+<meta property="og:image" content="https://blog.mizorekaren.top/568e51f0-75db-11ef-9581-bdb0fa59010d/2024-09-17_05-01-45.png">
+<meta property="og:image" content="https://blog.mizorekaren.top/568e51f0-75db-11ef-9581-bdb0fa59010d/2024-09-17%2005.45.08.mov">
+<meta property="og:image" content="https://blog.mizorekaren.top/568e51f0-75db-11ef-9581-bdb0fa59010d/2024-09-17_06-38-50.png">
+<meta property="og:image" content="https://blog.mizorekaren.top/568e51f0-75db-11ef-9581-bdb0fa59010d/2024-09-17_06-39-36.png">
+<meta property="og:image" content="https://blog.mizorekaren.top/568e51f0-75db-11ef-9581-bdb0fa59010d/2024-09-17_07-11-40.png">
+<meta property="og:image" content="https://blog.mizorekaren.top/568e51f0-75db-11ef-9581-bdb0fa59010d/2024-09-17_07-23-28.png">
+<meta property="og:image" content="https://blog.mizorekaren.top/568e51f0-75db-11ef-9581-bdb0fa59010d/2024-09-17_07-54-18.png">
+<meta property="og:image" content="https://blog.mizorekaren.top/568e51f0-75db-11ef-9581-bdb0fa59010d/2024-09-17_08-40-20.png">
+<meta property="og:image" content="https://blog.mizorekaren.top/568e51f0-75db-11ef-9581-bdb0fa59010d/2024-09-17_10-38-57.png">
+<meta property="og:image" content="https://blog.mizorekaren.top/568e51f0-75db-11ef-9581-bdb0fa59010d/2024-09-17_10-23-36.png">
+<meta property="og:image" content="https://blog.mizorekaren.top/568e51f0-75db-11ef-9581-bdb0fa59010d/2024-09-17_09-56-29.png">
+<meta property="og:image" content="https://blog.mizorekaren.top/568e51f0-75db-11ef-9581-bdb0fa59010d/2024-09-17_09-57-56.png">
+<meta property="og:image" content="https://blog.mizorekaren.top/568e51f0-75db-11ef-9581-bdb0fa59010d/2024-09-17_11-03-34.png">
+<meta property="og:image" content="https://blog.mizorekaren.top/568e51f0-75db-11ef-9581-bdb0fa59010d/2024-09-17_11-23-37.png">
+<meta property="og:updated_time" content="2024-09-18T17:30:55.745Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Test-Report for 24-09-22">
+<meta name="twitter:description" content="24-09-14 Ferdous Sohel 教授 “深度学习模型结构窥视”讲座笔记教授简介：Ferdous Sohel 现为澳大利亚蒙纳士 monash 大学 IT 教授，曾是西澳大利亚大学的助理教授，主要研究方向在 CV、多感官多模态融合计算、农业电子化 (监控、增产、智能化、环境友好化) ，并少许涉足了 AI 与健康医药领域交叉的研究。教育经历而言，1996/12 - 2002/04 在孟加">
+<meta name="twitter:image" content="https://blog.mizorekaren.top/568e51f0-75db-11ef-9581-bdb0fa59010d/2024-09-16_18-01-00.png">
+<meta name="twitter:creator" content="@JasonMizore">
+<meta name="twitter:site" content="https://twitter.com/JasonMizore">
+
+
+
+
+
+<link rel="icon" href="/images/avatar1.png">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+<link rel="stylesheet" href="/css/back-to-top.css">
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+<link rel="stylesheet" href="/css/progressbar.css">
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+
+
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="is-3-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/">
+            
+                <img src="/images/logo.png" alt="Test-Report for 24-09-22" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/">私の世界</a>
+                
+                <a class="navbar-item" href="/archives">Archives</a>
+                
+                <a class="navbar-item" href="/categories">Categories</a>
+                
+                <a class="navbar-item" href="/tags">Tags</a>
+                
+                <a class="navbar-item" href="https://twitter.com/JasonMizore" rel="external nofollow noopener noreferrer" target="_blank">About me</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                    
+                    
+                    <a class="navbar-item" target="_blank" title="Download on GitHub" href="https://github.com/mizorekaren" rel="external nofollow noopener noreferrer">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                    
+                
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8-tablet is-9-desktop is-6-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2024-09-18T15:30:38.000Z">2024-09-19</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Report/">Report</a>
+                </div>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                Test-Report for 24-09-22
+            
+        </h1>
+        <div class="content">
+            <h3 id="24-09-14-Ferdous-Sohel-教授-“深度学习模型结构窥视”讲座笔记"><a href="#24-09-14-Ferdous-Sohel-教授-“深度学习模型结构窥视”讲座笔记" class="headerlink" title="24-09-14 Ferdous Sohel 教授 “深度学习模型结构窥视”讲座笔记"></a>24-09-14 Ferdous Sohel 教授 “深度学习模型结构窥视”讲座笔记</h3><font size="2">教授简介：Ferdous Sohel 现为澳大利亚蒙纳士 monash 大学 IT 教授，曾是西澳大利亚大学的助理教授，主要研究方向在 CV、多感官多模态融合计算、农业电子化 (监控、增产、智能化、环境友好化) ，并少许涉足了 AI 与健康医药领域交叉的研究。教育经历而言，1996/12 - 2002/04 在孟加拉国工程技术大学攻读 CS 硕士；2004/04 - 2008/03 在澳大利亚 monash 大学攻读 IT 博士。</font>
+
+<a id="more"></a>
+<hr>
+<p>1，ConvNet 就是最基本、最原始的基于卷积神经网络，采用“简单串联多层”的方式所构建而成的神经网络架构，没什么花里胡哨的。著名的 ResNet (残差网络) 是对于 ConvNet 中 各CNN模块 “简单串联” 连接方式的改进，用以解决深层神经网络结构的梯度消失/爆炸问题，引入了所谓残差网络的概念 (下方介绍)，特征是在 Convnet 前向通路基础上引入了所谓的 shortcut 回路。此外，还有 Densenet (稠密连接网络) 其在 ResNet 基础之上更进一步，更加肆无忌惮的添加满了 shortcut 回路，让模型中的一个模块不仅拥有其前一个模块输出结果的 shortcut，还拥有了其前部所有模块输出结果的shortcut。</p>
+<center><img src="2024-09-16_18-01-00.png" alt="image-20240916180348974" style="zoom:50%;"></center>
+
+<p>1.1 ⚠️对 ResNet 残差网络所用到的残差块的简要粗略理解</p>
+<center><img src="2024-09-16_18-08-13.png" alt="image-20240916180348974" style="zoom:65%;"></center>
+
+<p>1.2 教授评价说：“<strong><u>==并非越复杂的模型性能越好，有时越简单反而性能越好==。举例而言，就是一般情况下，结构跟简单的 ResNET 反而各方面会优于 DenseNet！</u></strong>” 个人评价：“需要==注意奥卡姆剃刀原则==”</p>
+<p>1.3 小Tips：一个小订正</p>
+<center><img src="2024-09-16_18-21-44.png" alt="image-20240916180348974" style="zoom:45%;"></center>
+
+<p>1.4 ⚠️ 正统 ConvNet 的推理 flow chart 可视图</p>
+<center><img src="2024-09-16_18-45-46.png" alt="image-20240916180348974" style="zoom:65%;"></center>
+
+<p>1.5, ⚠️ <strong>卷积层越多，越能从图中抽取出更加具有抽象性质、更加本质的特征；全连接层越多，越能完成更加复杂的模式匹配，增加匹配成功率。</strong>此外，卷积层还有将图像嵌入到计算机可以处理的数值空间之中的作用，也可以将其视为全连接层的 “嵌入” 模块。</p>
+<hr>
+<p>2 ‼️‼️ 突破性理解 ：<strong><u>推荐将一个确定了结构但参数未定的 DL 网络看成是一个带有可浮动参数的抽象函数/映射表达式。将所有可能的参数取值状态带入前述抽象函数表达式所得到的确切表达式组成的映射集合，我们称之为“函数空间”。我们训练 DL 网络的本质实质就是在所述函数空间中寻找这么一种参数组合使得带入后的映射表达式可以最优的逼近我们的理想映射 (效果：在样本无穷多的验证集上推理全对)</u></strong><br>    <strong><u>需注意，你所选择的网络结构所引申出的函数空间应当包含你期望网络所学到的理想映射。若这条前提不满足，那么你不管用这套结构怎么在数据集上训练都是白搭的。</u></strong></p>
+<pre><code>‼️‼️‼️ 更进一步的：&lt;mark style=&quot;background-color: tOMATO&quot; &gt;**&lt;u&gt;如下图所示，模型训练的本质实际就是让模型自己在样本空间中画语义分界线的过程。上述函数空间，即模型的结构，决定了你能画出何样的曲线样貌，而模型的具体参数取值，决定了最终实例化的确切曲线 (多层感知机全连接层的宽度越宽该曲线就越发平滑)。模型推理过程实际就是在根据这些语义分界线在超空间中所划定出的各个语义范围在做给输入样本点做语义匹配罢了(简单而言，就是他落在哪个区域里就拥有哪个语义。在某一层中完成了前述的语义匹配操作之后，起还会对这个样本点做一定的线性变换 (类似于聚类？)，来将当前语义空间翻译成下一层能接受的语义空间&lt;/u&gt;**&lt;/mark&gt;
+</code></pre><center><img src="2024-09-17_05-57-37.png" alt="image-20240916180348974" style="zoom:75%;"></center>
+
+<hr>
+<p>3，‼️‼️ <strong><u>==在多层感知机中，设计隐藏层的用意其实是在 “给模型人工构建辅助性的推理链条，以辅助其可以更高质量的完成最终的推理任务，输出喜人的结果” 用的。其中，<mark style="background-color: tOMATO">每个隐藏层相当于就是一个提示性的问题 (虽然可能隐藏层自己最开始不包含任何语义。不过你可以在训练阶段，通过“设置数据集，体现你意图”的方式来人为干预训练，那么最后隐藏层他自己就会烘焙入你的特殊意图)</mark>！根据上述说法，多层感知机模型的推理过程可以理解为下面这样：每经过一个隐藏层，模型相当于都在回答一个铺垫性、台阶性的问题。回答的结果将采用 “针对下一全连接隐藏层的每个节点 (<mark style="background-color: tOMATO">每个节点相当于都是一种可能的答案</mark>)，按自信程度 (只认为该特定答案是正确答案的信心)，为他们赋予激活值 (自信程度与激活值之间的关系由激活函数确定)”的方式展现。==</u></strong></p>
+<center><img src="2024-09-16_20-02-48.png" alt="image-20240916180348974" style="zoom:75%;"></center>
+
+<hr>
+<p>4，‼️ <strong>概念解释：<u>卷积核，非常好理解，其实就是池化过程中，在该步骤的输入上，执行“色度采样”时所采用的采样范围的大小。</u></strong></p>
+<center><img src="2024-09-16_20-41-46.png" alt="image-20240916180348974" style="zoom:75%;"></center>
+
+<hr>
+<p>5, ‼️‼️ 教授个人经验分享 - 有关网络构建中所涉及到的隐藏层 “纵向深度 (即隐藏层层数) 与横向广度 (即单层node数)” 的取舍问题：</p>
+<ul>
+<li><mark style="background-color: NavajoWhite ">若数据本身在统计上就呈现出 Linearly Separable 的样貌，我们就不需要很多隐藏层</mark></li>
+<li><mark style="background-color: NavajoWhite ">若你觉得数据的区分复杂度比较低、不存在什么很抽象的特征需要模型识别 (通过意会判断)，那么通常情况下，选择 1 - 2 层隐藏层也就够了，反之，遇到了存在很抽象特征需要识别 亦或是 需要强调识别准确率的场景之下，一般选择 3 - 5 层隐藏层也就够了。增加隐藏层一般能帮助模型提取更多可识别特征，但也并非一直如此，有时纵向过深反而会带来反效果。</mark></li>
+<li><mark style="background-color: NavajoWhite ">单层隐藏层的节点数量需要被设置在输入层节点数与输出层节点数之间的一个数值，同时，各个隐藏层节点的数量理应一致。此外，最合适的隐藏层节点总数应该等于输入层节点数与输出层节点数的乘积。</mark></li>
+<li><mark style="background-color: NavajoWhite ">在后续隐藏层中，每一层的节点的数量理应不断减少，以鞭策模型做出更加具有抽象性的推理 (相当于强迫他做一个概括综合的工作，而不是机械的不停地在等价转换/翻译自己所识别到的内容)。</mark></li>
+<li><mark style="background-color: NavajoWhite ">更加宽广的隐藏层将非常适合用于记忆 (即可以抓取、识别到输入的很多细枝末节的特征)，但非常不适合用于泛化 (即识别出更加抽象的特征)。</mark></li>
+<li><mark style="background-color: NavajoWhite ">过于贪心也不是一件好事，同时很深又很广的隐藏层会使得最后训练出来的模型过拟合 Overfitting，降低模型向其没见过输入迁移自己所学的泛化能力，同时，这还会使你的训练与推理的计算开销成几何倍数的增加。</mark></li>
+<li>推荐延伸阅读论文：<ul>
+<li>Robustness in deep learning: The good (width), the bad (depth), and the ugly (initialization)</li>
+<li>Do Wide and Deep Networks Learn the Same Things? Uncovering How Neural Network Representations Vary with Width and Depth<ul>
+<li>==感叹：论文中居然还有这种大张旗鼓谈自己形而上、但恰好能被实际验证的理解的文章==</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>5.1 概念解释 - Linearly Separable：</p>
+<center><img src="2024-09-17_05-01-45.png" alt="image-20240916180348974" style="zoom:55%;"></center>
+
+<p>5.2 一个演示视频</p>
+<center><img src="2024-09-17 05.45.08.mov" style="zoom:80%;"></center>
+
+<hr>
+<p>6，深度学习概念解析：<strong>variance &amp; bias，Unerfitting &amp; Overfitting &amp; Good-fit</strong></p>
+<center><img src="2024-09-17_06-38-50.png" style="zoom:70%;"></center>
+
+<p>6.1 简述何为正则化 (在下方第 8 条有更详细的介绍)</p>
+<center><img src="2024-09-17_06-39-36.png" style="zoom:100%;"></center>
+
+<p>6.2 简述何为交叉验证 cross-validation</p>
+<center><img src="2024-09-17_07-11-40.png" style="zoom:100%;"></center>
+
+<hr>
+<p>7，激活函数用于在层与层传递数据的过程中额外做一步数据转换/翻译操作，以为你的数据添加一些别有特色的 features (例如 缓解梯度消失与爆炸问题、低通滤波、可微分特性、zero-centred)。其就是一个简单、确定、预设的函数映射而已，事前确定，无需训练。一般而言使用的最多的激活函数是 RELU 。</p>
+<center><img src="2024-09-17_07-23-28.png" style="zoom:75%;"></center>
+
+<p>7.1 ⚠️ 教授个人经验分享 - 有关网络构建中所用到的激活函数取舍问题</p>
+<ul>
+<li><mark style="background-color: NavajoWhite ">遇事不决先选 ReLU，速度快，可以为模型输出赋予一定稀松性，同时，更加仿生于我们大脑中神经元的实际运作方式。此外，其斜率固定，不会出现斜率平稳化与饱和化的问题，故不会像其他类似于Sigmoid或tanh的激活函数，会为模型引入梯度消失/爆炸问题。==Relu 只能被用在 Hidden layer 中==。</mark></li>
+<li><mark style="background-color: NavajoWhite ">其他情况可以选择 Mish！其被视作 Relu 的继任者，在 2019 年被 Diganta Misra 提出，虽然会使模型的收敛速度恶化，相较使用 Relu，但是他可以解决 relu 在负值之上强行截断因而导致的“梯度变化不光滑”问题</mark>。</li>
+<li><mark style="background-color: NavajoWhite ">==sigmoid、Ligistic、Tanh 等激活函数不应该被应用在 Hidden layer 中==，因为其可能会在训练中使得模型更容易受到外部扰动的影响 (由于梯度消失问题)</mark>。</li>
+<li><mark style="background-color: NavajoWhite ">==Swish 激活函数跟适合在深度超过 40 层的深度网络中使用==</mark></li>
+<li><mark style="background-color: NavajoWhite ">==在二元分类任务中推荐使用sigmoid，在多元分类任务重则推荐使用 softmax。==</mark></li>
+</ul>
+<p>7.2 概念解释 - 模型的稀松性<br>    模型稀疏性指的是在机器学习模型中，只有部分特征或参数对最终结果具有显著的影响，而其他特征或参数对结果的贡献相对较小或可以忽略不计的情况。简单而言，可以将其算为一种感性的指标，其描绘的是“模型的输出中只有极其有限的少数几个神经元被极大地激活了，其他的神经元几乎没有被激活”的一副样貌。</p>
+<p>7.3 激活函数 Mish</p>
+<center><img src="2024-09-17_07-54-18.png" style="zoom:75%;"></center>
+
+<hr>
+<p>8，Dropout 暂退法 - 一种阻止模型在训练中过拟合的正则化方法</p>
+<center><img src="2024-09-17_08-40-20.png" style="zoom:75%;"></center>
+
+<hr>
+<p>9，基于深度学习的分类器设计中经常会遇到的 data imbalacnce 数据不平衡问题</p>
+<pre><code>分类(classification)问题 是数据挖掘领域中非常重要的一类问题，目前有琳琅满目的方法来完成分类。然而在真实的应用环境中，分类器(classifier)扮演的角色通常是识别数据中的“少数派”，起到异常识别的作用，比如：银行识别信用卡异常交易记录识别、检测流水线识别残次品等等。至于所谓的“data imbalacnce” 问题，举例而言，试想你的训练集(training set)是某银行过去一年的信用卡交易记录，你将测试集(test set)数据放到你的分类器后，发现你的分类器准确率(accuracy)高达98%，98%的数据都被分到了正确的组中！但是这是值得庆祝的结果么？不一定，因为你的 classifier 可能在欺骗你。当你仔细研究数据集时你可能会发现，信用卡交易数据中有98%记录都是正常的消费转账记录，仅有2%是异常记录。**&lt;u&gt;对于这类数据集，在默认设置(Default)下，分类器的训练目标是准确率最大化，那么分类器很有可能找到一种偷懒的方式 “ 只要忽略那些少得可怜的异类，将全部数据都打上0，即[正常交易]的标签，就可以达到98%的准确率 ”，来完成你交给他的任务&lt;/u&gt;**。但这显然不是我们想要的结果，看似极高的准确率只是体现了样本本身的分布而已，而将一个异类样本错判为正常样本的成本往往非常大。仔细思考就不难发现在这样的数据集中，我们经常使用的分类器评估方法——准确率就会失效（准确率accuracy=被正确分类的样本量/样本总量）。&lt;u&gt;**一般来说，当两组样本数量的比例超过4：1时，不均衡问题就会非常严重，值得重视。**&lt;/u&gt;
+</code></pre><center><img src="2024-09-17_10-38-57.png" style="zoom:75%;"></center>
+
+<center><img src="2024-09-17_10-23-36.png" style="zoom:50%;"></center>
+
+<p>9.1，K-means 聚类算法 (有监督) 与 KNN 分类算法 (无监督)<br>        -&gt; 注意：这里所谓 “K” 看着好像很高大上，实际只是其中所用到的重要参数的常见命名罢了。</p>
+<center><img src="2024-09-17_09-56-29.png" style="zoom:75%;"></center>
+
+<center><img src="2024-09-17_09-57-56.png" style="zoom:75%;"></center>
+
+<hr>
+<p>10，重要价值观：<strong><u>==模型和方法本身并没有对错，只有适合与不适合，所以有时与其在那里思前想后的纠结，还不如直接上手做实践，去穷举般的尝试，用实际效果来决定自己所选用的方法与模型，之后在做原因分析！==</u></strong></p>
+<hr>
+<p>11，Adversaial attack 对抗性攻击<br>    所谓对抗样本就是指：在原始样本上叠加入一些人眼无法察觉的扰动（这样的扰动不会影响人类的识别，但是却很能容易愚弄模型），其能致使分类器做出错误的判断。==实现原理，个人理解，认为这些扰动，在嵌入到语义空间之后，本质实际就是样本空间中的一个偏置矢量，能使得原样本在嵌入语义空间之后的样本点发生 Shift。若其成功 shift 到了其他类别的语义空间，那么此攻击意图就能 fullfill==。</p>
+<center><img src="2024-09-17_11-03-34.png" style="zoom:75%;"></center>
+
+<hr>
+<p><strong>12，教授经验 - “选择 fine-tune、从头训练 或 微调模型结构 以来优化模型性能” 的时机 - training issue</strong></p>
+<center><img src="2024-09-17_11-23-37.png" style="zoom:75%;"></center>
+
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+    <div>
+      <ul class="post-copyright">
+        <li class="post-copyright-author">
+        <strong>Written By：</strong>Mizore Karen（みぞれ カレン)
+        </li>
+        <li class="post-copyright-license">
+        <strong>Site Name：
+        </strong>
+        ******みぞれの心の世界******
+        </li>
+        <li class="post-copyright-license">
+            <strong>Special Notice：  
+            </strong>
+            コンテンツの保存及び転載は固くお断りいたします.当サイトに記載されるコンテンツ(文章画像等)は著作権により保護されています.万が一コンテンツや写真の盗用・二次利用が見つかった場合には500pxの写真販売価格を参考に差止め請求及び使用料または損害賠償請求をさせて頂く場合がございますので予めご了承下さい.記事に関するお問い合わせや寄稿についてはお問い合わせフォームまでお願いいたします.
+        </li>
+      </ul>
+    <div>
+      
+
+
+</div></div></div>
+                
+
+
+
+
+<div class="column is-4-tablet is-3-desktop is-3-widescreen  has-order-1 column-left is-sticky">
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <nav class="level">
+            <div class="level-item has-text-centered">
+                <div>
+                    <img class="image is-128x128 has-mb-6" src="/images/avatar1.png" alt="みぞれ カレン">
+                    
+                    <p class="is-size-4 is-block">
+                        みぞれ カレン
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-block">
+                        知識わ力がある
+                    </p>
+                    
+                    
+                </div>
+            </div>
+        </nav>
+        <nav class="level is-mobile">
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        投稿
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        12
+                    </p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        カテゴリ
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        3
+                    </p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        タグ
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        1
+                    </p>
+                </div>
+            </div>
+        </nav>
+        <div class="level">
+            <a class="level-item button is-link is-rounded" href="https://twitter.com/JasonMizore" rel="external nofollow noopener noreferrer" target="_blank">
+                フォローする</a>
+        </div>
+        
+        
+        <div class="level is-mobile">
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="mizorekaren" href="https://github.com/mizorekaren" rel="external nofollow noopener noreferrer">
+                
+                <i class="fab fa-github"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="JasonMizore" href="https://twitter.com/JasonMizore" rel="external nofollow noopener noreferrer">
+                
+                <i class="fab fa-twitter"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="鎧塚 みぞれ" href="https://www.facebook.com/mizorekaren" rel="external nofollow noopener noreferrer">
+                
+                <i class="fab fa-facebook"></i>
+                
+            </a>
+            
+        </div>
+        
+    </div>
+</div>
+    
+        
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                カテゴリ
+            </h3>
+            <ul class="menu-list">
+            <li>
+        <a class="level is-marginless" href="/categories/My-Thought/">
+            <span class="level-start">
+                <span class="level-item">My Thought</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">9</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/Report/">
+            <span class="level-start">
+                <span class="level-item">Report</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/Tecnology-Related/">
+            <span class="level-start">
+                <span class="level-item">Tecnology Related</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">2</span>
+            </span>
+        </a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+    
+        <div class="column-right-shadow is-hidden-widescreen ">
+        
+            <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            アーカイブ
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2024/09/">
+                <span class="level-start">
+                    <span class="level-item">九月 2024</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2021/06/">
+                <span class="level-start">
+                    <span class="level-item">六月 2021</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2021/01/">
+                <span class="level-start">
+                    <span class="level-item">一月 2021</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2020/12/">
+                <span class="level-start">
+                    <span class="level-item">十二月 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">3</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2020/11/">
+                <span class="level-start">
+                    <span class="level-item">十一月 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">3</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/02/">
+                <span class="level-start">
+                    <span class="level-item">二月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/01/">
+                <span class="level-start">
+                    <span class="level-item">一月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+            <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=455 src="//music.163.com/outchain/player?type=0&id=2639936542&auto=1&height=430"> -->
+        
+            <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                タグ
+            </h3>
+            <div class="field is-grouped is-grouped-multiline">
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/私の気分/">
+                        <span class="tag">私の気分</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+            <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=455 src="//music.163.com/outchain/player?type=0&id=2639936542&auto=1&height=430"> -->
+        
+        </div>
+    
+</div>
+
+
+                
+
+
+
+
+<div class="column is-4-tablet is-3-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right ">
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            アーカイブ
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2024/09/">
+                <span class="level-start">
+                    <span class="level-item">九月 2024</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2021/06/">
+                <span class="level-start">
+                    <span class="level-item">六月 2021</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2021/01/">
+                <span class="level-start">
+                    <span class="level-item">一月 2021</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2020/12/">
+                <span class="level-start">
+                    <span class="level-item">十二月 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">3</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2020/11/">
+                <span class="level-start">
+                    <span class="level-item">十一月 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">3</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/02/">
+                <span class="level-start">
+                    <span class="level-item">二月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/01/">
+                <span class="level-start">
+                    <span class="level-item">一月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                タグ
+            </h3>
+            <div class="field is-grouped is-grouped-multiline">
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/私の気分/">
+                        <span class="tag">私の気分</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+</div>
+
+
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/">
+                
+                    <img src="/images/logo.png" alt="Test-Report for 24-09-22" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2024 MizoreKaren（みぞれ カレン）&nbsp;
+                Powered by <a href="http://hexo.io/" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a> & <a href="http://github.com/ppoffice/hexo-theme-icarus" rel="external nofollow noopener noreferrer" target="_blank">Icarus</a>
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/" rel="external nofollow noopener noreferrer">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/" rel="external nofollow noopener noreferrer">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Download on GitHub" href="https://github.com/mizorekaren" rel="external nofollow noopener noreferrer">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("ja");</script>
+
+
+    
+    
+    
+    <script src="/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    <script src="/js/gallery.js" defer></script>
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/" rel="external nofollow noopener noreferrer" target="_blank">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        });
+    });
+</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    MathJax.Hub.Config({
+        'HTML-CSS': {matchFontHeight: false},
+        SVG: {matchFontHeight: false},
+        CommonHTML: {matchFontHeight: false}
+    });
+});
+</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+<script src="/js/back-to-top.js" defer></script>
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    <script src="/js/clipboard.js" defer></script>
+    
+
+    
+
+
+<script src="/js/main.js" defer></script>
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '投稿',
+                PAGES: 'Pages',
+                CATEGORIES: 'カテゴリ',
+                TAGS: 'タグ',
+                UNTITLED: '(Untitled)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/js/insight.js" defer></script>
+<link rel="stylesheet" href="/css/search.css">
+<link rel="stylesheet" href="/css/insight.css">
+    
+</body>
+</html>
